@@ -8,11 +8,29 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
+  &nbsp;&nbsp;
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  &nbsp;&nbsp;
+  <ion-list>
+    <ion-item (click)="goToFixedAccount()">
+      <ion-icon name="cube" item-start></ion-icon>
+      Fixed Account
+    </ion-item>
+    <ion-item (click)=" goToSavingsAccount()">
+      <ion-icon name="bookmark" item-start></ion-icon>
+      Saving Amount
+    </ion-item>
+    <ion-item (click)="goToFixedAmounttSavings()">
+      <ion-icon name="color-filter" item-start></ion-icon>
+      Fixed Amount Savings
+    </ion-item>
+    <ion-item (click)=" goToChameAccount()">
+      <ion-icon name="people" item-start></ion-icon>
+      Chama Accounts
+    </ion-item>
+    <p>
+      You are Logged in Mwas
+    </p>
+  </ion-list>
   <button ion-button secondary menuToggle>Toggle Menu</button>
 </ion-content>

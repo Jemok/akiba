@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {SignUpPage} from "../sign-up/sign-up";
+import {FixedAccountPage} from "../fixed-account/fixed-account";
+import {SavingsAccountPage} from "../savings-account/savings-account";
+import {FixedAmountSavingsPage} from "../fixed-amount-savings/fixed-amount-savings";
+import {ChamaAccountsPage} from "../chama-accounts/chama-accounts";
 
 @Component({
   selector: 'page-home',
@@ -8,7 +13,19 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
+  }
 
+  goToFixedAccount(){
+    this.navCtrl.push(FixedAccountPage,{})
+  }
+  goToSavingsAccount(){
+    this.navCtrl.push(SavingsAccountPage,{})
+  }
+  goToFixedAmounttSavings(){
+    this.navCtrl.push(FixedAmountSavingsPage,{})
+  }
+  goToChameAccount(){
+    this.navCtrl.push(ChamaAccountsPage,{})
   }
 
 }

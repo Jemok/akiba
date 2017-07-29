@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="navbarColor">
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="page-login">
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+      &nbsp;
+    <ion-label>
+      <input type="radio" checked="false"> Remember Me
+    </ion-label>
+    &nbsp;
+    <p>
+      <button ion-button block (click)="goToHome()">Sign in</button>
+    </p>
+    &nbsp;
+    <a href="#">Forget Your Password? </a>
+  </ion-list>
+</ion-content>
