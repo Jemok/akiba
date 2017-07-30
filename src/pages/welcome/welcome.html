@@ -1,10 +1,16 @@
 <ion-content padding class="page-login">
 
-    <h1 style="text-align: center; padding-top: 2em     ">AKIBA</h1>
+    <!--<h1 style="text-align: center; padding-top: 2em     ">AKIBA</h1>-->
+    <div style="margin-left: 16%; padding-bottom: 0%">
+        <img width="200" height="200" style="padding: 0;" src="../../assets/logo.jpg" />
+    </div>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <p style="text-align: center"> Virtual Bank</p>
+    <p class="slogan">
+        Virtual Bank
+    </p>
     &nbsp;&nbsp;
+    <button ion-button block (click)="goToLogin()" class="login-button">Log in</button>
+
     <button ion-button block (click)="goToSignUp()">Sign Up</button>
     &nbsp;&nbsp;
-    <button ion-button block (click)="goToLogin()">Log in</button>
 </ion-content>
