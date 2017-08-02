@@ -1,18 +1,40 @@
-<!--
-  Generated template for the SavingsAccountPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>SavingsAccount</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Savings Account</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
-<ion-content padding>
+<ion-content padding >
+  <ion-list>
+    <ion-list-header>
+      Savings Rate
+    </ion-list-header>
+    <ion-item>
+      <ion-label floating>Percentage</ion-label>
+      <ion-input type="text" value="" required=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Duration to deduct</ion-label>
+      <ion-select [(ngModel)]="period">
+        <ion-option value="daily">Daily</ion-option>
+        <ion-option value="weekly">Weekly</ion-option>
+        <ion-option value="monthly">Monthly</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Until to deduct</ion-label>
+      <ion-datetime displayFormat="DDDD MMMM D, YYYY" min="2017" max="2020-10-31" [(ngModel)]="myDate">
+      </ion-datetime>
+    </ion-item>
+  </ion-list>
+  <p>
+    <button ion-button clear full >Balance</button>
+  </p>
+  &nbsp;
+  <p>
+    You are Logged in Mwas
+  </p>
 
 </ion-content>

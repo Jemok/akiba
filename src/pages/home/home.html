@@ -6,8 +6,7 @@
     <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
-
-<ion-content padding>
+<ion-content padding class="page-login">
   &nbsp;&nbsp;
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   &nbsp;&nbsp;
@@ -32,5 +31,5 @@
       You are Logged in Mwas
     </p>
   </ion-list>
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+  <button ion-button full menuToggle> Menu</button>
 </ion-content>

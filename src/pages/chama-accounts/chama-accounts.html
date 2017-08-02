@@ -1,18 +1,36 @@
-<!--
-  Generated template for the ChamaAccountsPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>ChamaAccounts</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Chama Accounts</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
 <ion-content padding>
+  &nbsp;&nbsp;
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  &nbsp;&nbsp;
+  <ion-list>
+    <ion-list-header>
+      Accounts
+    </ion-list-header>
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-icon name="ios-add-circle-outline" item-end></ion-icon>
+      <ion-input type="text" value="" required="">
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4><a href="#"> Accounts</a></ion-col>
+          <ion-col col-4><a href="#"> Requests</a></ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
+  <p>
+    You are Logged in Mwas
+  </p>
 
 </ion-content>

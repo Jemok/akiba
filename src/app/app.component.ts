@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import {LoginPage} from "../pages/login/login";
 import {WithdrawalPage} from "../pages/withdrawal/withdrawal";
 import {TransfersPage} from "../pages/transfers/transfers";
@@ -12,6 +11,8 @@ import {FixedAccountPage} from "../pages/fixed-account/fixed-account";
 import {SavingsAccountPage} from "../pages/savings-account/savings-account";
 import {FixedAmountSavingsPage} from "../pages/fixed-amount-savings/fixed-amount-savings";
 import {WelcomePage} from "../pages/welcome/welcome";
+import {ChamaAccountsPage} from "../pages/chama-accounts/chama-accounts";
+import {PayWithPaypalPage} from "../pages/pay-with-paypal/pay-with-paypal";
 
 @Component({
   templateUrl: 'app.html'
@@ -19,7 +20,7 @@ import {WelcomePage} from "../pages/welcome/welcome";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = WelcomePage;
+  rootPage: any = FixedAmountSavingsPage;
 
   pages: Array<{title: string, component: any}>;
 
@@ -29,13 +30,13 @@ export class MyApp {
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage },
        {title:'Withdrawal', component: WithdrawalPage},
       {title:'Transfers', component: TransfersPage},
       {title:'Fixed Account', component: FixedAccountPage},
       {title:'Savings Account', component: SavingsAccountPage},
-      {title:'Fixed Amount', component: FixedAmountSavingsPage},
-      {title:'Withdrawal', component: WithdrawalPage},
+      {title:'Fixed Amount Savings', component: FixedAmountSavingsPage},
+      {title:'Chama Accounts', component: ChamaAccountsPage},
+      {title:'Pay with PayPal', component: PayWithPaypalPage },
       {title: 'Logout', component:LoginPage}
 
     ];
