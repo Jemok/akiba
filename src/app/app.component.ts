@@ -20,7 +20,7 @@ import {PayWithPaypalPage} from "../pages/pay-with-paypal/pay-with-paypal";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = FixedAmountSavingsPage;
+  rootPage: any = WelcomePage;
 
   pages: Array<{title: string, component: any}>;
 

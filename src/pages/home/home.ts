@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import {SignUpPage} from "../sign-up/sign-up";
 import {FixedAccountPage} from "../fixed-account/fixed-account";
 import {SavingsAccountPage} from "../savings-account/savings-account";
 import {FixedAmountSavingsPage} from "../fixed-amount-savings/fixed-amount-savings";
