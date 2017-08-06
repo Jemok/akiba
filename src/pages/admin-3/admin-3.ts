@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {ChargesPage} from "../charges/charges";
+import {RatesPage} from "../rates/rates";
 
 /**
  * Generated class for the Admin_3Page page.
@@ -16,6 +18,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class Admin_3Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+  goToCharges(){
+    this.navCtrl.push(ChargesPage, {})
+  }
+  goToViewRates(){
+    this.navCtrl.push(RatesPage, {})
   }
 
   ionViewDidLoad() {

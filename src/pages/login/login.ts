@@ -1,7 +1,5 @@
-///<reference path="../home/home.ts"/>
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {SignUpPage} from "../sign-up/sign-up";
 import {HomePage} from "../home/home";
 
 @IonicPage()

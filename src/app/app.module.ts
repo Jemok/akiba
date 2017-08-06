@@ -20,6 +20,8 @@ import {AdminPageModule} from "../pages/admin/admin.module";
 import {AdminPage} from "../pages/admin/admin";
 import {Admin_2Page} from "../pages/admin-2/admin-2";
 import {Admin_3Page} from "../pages/admin-3/admin-3";
+import {ChargesPage} from "../pages/charges/charges";
+import {RatesPage} from "../pages/rates/rates";
 
 
 @NgModule({
@@ -38,7 +40,9 @@ import {Admin_3Page} from "../pages/admin-3/admin-3";
     WelcomePage,
     AdminPage,
     Admin_2Page,
-    Admin_3Page
+    Admin_3Page,
+      ChargesPage,
+      RatesPage
   ],
   imports: [
     BrowserModule,
@@ -60,7 +64,10 @@ import {Admin_3Page} from "../pages/admin-3/admin-3";
       WelcomePage,
       AdminPage,
       Admin_2Page,
-      Admin_3Page
+      Admin_3Page,
+    ChargesPage,
+    RatesPage
+
   ],
   providers: [
     StatusBar,
