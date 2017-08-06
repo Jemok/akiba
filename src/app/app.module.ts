@@ -1,5 +1,4 @@
-///<reference path="../pages/sign-up/sign-up.ts"/>
-import { BrowserModule } from '@angular/platform-browser';
+import {BrowserModule, platformBrowser} from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
@@ -17,6 +16,10 @@ import {SavingsAccountPage} from "../pages/savings-account/savings-account";
 import {PayWithPaypalPage} from "../pages/pay-with-paypal/pay-with-paypal";
 import {ChamaAccountsPage} from "../pages/chama-accounts/chama-accounts";
 import {WelcomePage} from "../pages/welcome/welcome";
+import {AdminPageModule} from "../pages/admin/admin.module";
+import {AdminPage} from "../pages/admin/admin";
+import {Admin_2Page} from "../pages/admin-2/admin-2";
+import {Admin_3Page} from "../pages/admin-3/admin-3";
 
 
 @NgModule({
@@ -32,11 +35,14 @@ import {WelcomePage} from "../pages/welcome/welcome";
       SavingsAccountPage,
       PayWithPaypalPage,
       ChamaAccountsPage,
-    WelcomePage
+    WelcomePage,
+    AdminPage,
+    Admin_2Page,
+    Admin_3Page
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -51,7 +57,10 @@ import {WelcomePage} from "../pages/welcome/welcome";
     SavingsAccountPage,
     PayWithPaypalPage,
     ChamaAccountsPage,
-      WelcomePage
+      WelcomePage,
+      AdminPage,
+      Admin_2Page,
+      Admin_3Page
   ],
   providers: [
     StatusBar,

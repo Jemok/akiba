@@ -13,9 +13,6 @@ export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-  goToSignUp(){
-    this.navCtrl.push(SignUpPage,{})
-  }
   goToHome(){
     this.navCtrl.push(HomePage,{})
   }

@@ -1,6 +1,6 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+  <ion-navbar ion-navbar hideBackButton="true">
+    <button ion-button right menuToggle >
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>Home</ion-title>
@@ -27,9 +27,10 @@
       <ion-icon name="people" item-start></ion-icon>
       Chama Accounts
     </ion-item>
+    &nbsp;
     <p>
       You are Logged in Mwas
     </p>
   </ion-list>
-  <button ion-button full menuToggle> Menu</button>
+  <button ion-button (click)="goBack()"> Back</button>
 </ion-content>

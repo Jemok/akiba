@@ -13,6 +13,7 @@ import {FixedAmountSavingsPage} from "../pages/fixed-amount-savings/fixed-amount
 import {WelcomePage} from "../pages/welcome/welcome";
 import {ChamaAccountsPage} from "../pages/chama-accounts/chama-accounts";
 import {PayWithPaypalPage} from "../pages/pay-with-paypal/pay-with-paypal";
+import {AdminPage} from "../pages/admin/admin";
 
 @Component({
   templateUrl: 'app.html'
@@ -20,7 +21,7 @@ import {PayWithPaypalPage} from "../pages/pay-with-paypal/pay-with-paypal";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = WelcomePage;
+  rootPage: any = AdminPage;
 
   pages: Array<{title: string, component: any}>;
 
