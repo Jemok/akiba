@@ -4,7 +4,7 @@ import { WithdrawalPage } from './withdrawal';
 
 @NgModule({
   declarations: [
-    WithdrawalPage,
+    // WithdrawalPage,
   ],
   imports: [
     IonicPageModule.forChild(WithdrawalPage),

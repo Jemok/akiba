@@ -4,7 +4,7 @@ import { FixedAccountPage } from './fixed-account';
 
 @NgModule({
   declarations: [
-    FixedAccountPage,
+    // FixedAccountPage,
   ],
   imports: [
     IonicPageModule.forChild(FixedAccountPage),

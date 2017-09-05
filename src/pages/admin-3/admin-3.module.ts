@@ -4,7 +4,7 @@ import { Admin_3Page } from './admin-3';
 
 @NgModule({
   declarations: [
-    Admin_3Page,
+    // Admin_3Page,
   ],
   imports: [
     IonicPageModule.forChild(Admin_3Page),

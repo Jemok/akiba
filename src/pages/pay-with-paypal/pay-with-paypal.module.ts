@@ -4,7 +4,7 @@ import { PayWithPaypalPage } from './pay-with-paypal';
 
 @NgModule({
   declarations: [
-    PayWithPaypalPage,
+    // PayWithPaypalPage,
   ],
   imports: [
     IonicPageModule.forChild(PayWithPaypalPage),

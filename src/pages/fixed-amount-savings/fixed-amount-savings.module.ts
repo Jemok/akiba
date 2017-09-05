@@ -4,7 +4,7 @@ import { FixedAmountSavingsPage } from './fixed-amount-savings';
 
 @NgModule({
   declarations: [
-    FixedAmountSavingsPage,
+    // FixedAmountSavingsPage,
   ],
   imports: [
     IonicPageModule.forChild(FixedAmountSavingsPage),

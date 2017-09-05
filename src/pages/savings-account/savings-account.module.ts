@@ -4,7 +4,7 @@ import { SavingsAccountPage } from './savings-account';
 
 @NgModule({
   declarations: [
-    SavingsAccountPage,
+    // SavingsAccountPage,
   ],
   imports: [
     IonicPageModule.forChild(SavingsAccountPage),

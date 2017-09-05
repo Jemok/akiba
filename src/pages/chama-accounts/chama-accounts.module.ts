@@ -4,7 +4,7 @@ import { ChamaAccountsPage } from './chama-accounts';
 
 @NgModule({
   declarations: [
-    ChamaAccountsPage,
+    // ChamaAccountsPage,
   ],
   imports: [
     IonicPageModule.forChild(ChamaAccountsPage),

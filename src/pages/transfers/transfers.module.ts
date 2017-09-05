@@ -4,7 +4,7 @@ import { TransfersPage } from './transfers';
 
 @NgModule({
   declarations: [
-    TransfersPage,
+    // TransfersPage,
   ],
   imports: [
     IonicPageModule.forChild(TransfersPage),
